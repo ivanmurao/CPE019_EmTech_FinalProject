@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(106, 248, 156, 0.1);
+  background-image: linear-gradient(
+    rgba(0, 153, 51, 0.2),
+    rgba(255, 255, 255, 0.2)),
+    url('../public/rps_bg.jpg');
+  background-repeat: repeat;
+  background-size: cover; /* Adjust the percentage as desired */
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vh;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(15, 15, 15, 0.3);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 1000;
+  margin-bottom: 20px;
+  color: #0f1010;
+  text-align: center;
+}
+
+.file-input {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.predict-btn {
+  padding: 12px 24px;
+  background-color: #49f1d5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.predict-btn:hover {
+  background-color: #49f1d5;
+}
+
+.predict-btn:disabled {
+  background-color: #b9b9b9;
+  cursor: not-allowed;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
+}

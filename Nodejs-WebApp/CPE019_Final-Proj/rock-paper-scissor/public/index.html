@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/rps_logo.png" 
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+    name="description"
+    content="Web site app for Rock-Paper-Scissor Classifier"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Rock Paper Scissor Prediction</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .file-input {
+      margin-bottom: 20px;
+    }
+
+    .predict-btn {
+      padding: 12px 24px;
+      background-color: #49f1d5;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .predict-btn:hover {
+      background-color: #0c84e4;
+    }
+
+    .predict-btn:disabled {
+      background-color: #49f1d5;
+      cursor: not-allowed;
+    }
+
+    .result {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html>
